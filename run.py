@@ -2,11 +2,11 @@ import sys
 
 
 if __name__ == '__main__':
+    """
+    run.py [CSV_FILE_PATH] like run.py ./csv/sample.csv
+    """
     args = sys.argv
     if 2 <= len(args):
-        if args[1].isdigit():
-            fizzBuzz(int(args[1]))
-        else:
-            print('Argument is not digit')
+        
     else:
         print('Arguments are too short')
